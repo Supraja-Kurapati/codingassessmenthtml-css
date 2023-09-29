@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.nav{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color:#EBD676 ;
+    border: 1px solid #EBD676;
+}
+.left{
+display: inline-block;
+margin: 10px;
+}
+.text{
+    font-family: serif;
+
+}
+.text1{
+color: #2994CA;
+font-size: 25px;
+position: absolute;
+left: 85px;
+top: 30px;
+}
+.text2{
+color: #F08615;
+font-size: 15px;
+position: absolute;
+left: 75px;
+top: 60px;
+}
+.right{
+display: flex;
+align-items: flex-end;
+}
+.button{
+    height: 20px;
+    width: 90px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #175FDC ;
+    text-align: center;
+}
+.container{
+    height: 80vh;
+    width: 100vw;
+background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?q=10&h=200);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.box{
+    height: 70px;
+    width: 130px;
+    margin: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.box1{
+background-color: green;
+animation: anim1 3s linear infinite ;
+}
+@keyframes anim1{
+    100%{
+    transform: translateX(300px);
+}
+}  
+.box2{
+    background-color: red;
+    animation: anim2 3s ease infinite;
+}
+@keyframes anim2{
+    100%{
+    transform: translateX(300px);
+    }
+    
+}
+
+.box3{
+    background-color: green;
+    animation: anim3 3s ease-in infinite;
+
+}
+@keyframes anim3{
+    100%{
+    transform: translateX(300px);
+}
+}
+.box4{
+    background-color: red;
+    animation: anim4 3s ease-out infinite;
+
+}
+@keyframes anim4{
+    100%{
+    transform: translateX(300px);
+}
+}
+.box5{
+    background-color: green;
+    animation: anim5 1.5s ease-in-out infinite;
+
+}
+@keyframes anim5{
+    100%{
+    transform: translateX(300px);
+}
+}
+
+
+@media screen and (min-width: 300px) and (max-width:700px) {
+    .nav{
+        height: 100px;
+    }
+   .text1{
+    position: absolute;
+    top: 10px;
+    left: 70px;
+   }
+   .text2{
+    top:40px ;
+    left: 70px;
+   }
+   .right{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+   }
+   .button{
+    height: 30px;
+    width: 60px;
+    margin: 5px;
+   }
+   .container{
+    height: 100vh;
+    background-repeat: repeat;
+    background-position: center;
+   }
+   .box{
+    height: 50px;
+    width: 70px;
+   }
+}
